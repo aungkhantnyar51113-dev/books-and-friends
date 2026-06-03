@@ -30,16 +30,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${libreBaskerville.variable} ${sourceSans.variable}`}>
-      <body className="min-h-screen flex flex-col bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-sans antialiased">
+      <body className="min-h-screen flex flex-col bg-stone-50 dark:bg-stone-950 text-stone-900 dark:text-stone-100 font-sans antialiased overflow-x-hidden">
         <NetworkStatus />
         <AuthProvider>
           <NotificationProvider>
             <Nav />
-            <main className="flex-1">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              {children}
-            </div>
-          </main>
+            <main className="flex-1 overflow-x-hidden">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                {children}
+              </div>
+            </main>
           </NotificationProvider>
         </AuthProvider>
       </body>

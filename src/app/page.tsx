@@ -22,7 +22,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-[#FDFCF9] pt-32">
+    <div className="min-h-screen bg-[#FDFCF9] pt-16 md:pt-32">
         {/* Hero Section */}
         <section className="grid md:grid-cols-2 gap-12 items-center mb-24">
           {/* Left Side - Hero Content */}
